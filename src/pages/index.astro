@@ -1,5 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CoinFund from "../images/CoinFund.svg";
+import cmc from "../images/cmc.svg";
+import logo1k from "../images/1k.svg";
+import coinbase from "../images/coinbase.svg";
 ---
 
 <!-- 
@@ -10,12 +14,12 @@ import Layout from "../layouts/Layout.astro";
 
  -->
 <Layout>
-  <div class="flex flex-col items-center gap-20 py-20">
+  <div class="flex flex-col items-center gap-20 py-20 w-full">
     <div class="text-heading font-semibold text-center">
       4 years of building <br /> user-friendly web3 products <br /> used by millions
     </div>
 
-    <div aria-label="cards" class="flex flex-col gap-4">
+    <div aria-label="cards" class="flex flex-col gap-4 w-full">
       <div
         aria-label="card NFT"
         class="p-10 border border-gray-700/70 rounded-3xl"
@@ -59,18 +63,14 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 
-    <!-- <div class="bg-green-500 flex gap-1">
-    <div>Backed by</div>
-    <div class="*:h-6 *:w-36 *:object-scale-down flex">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/1024px-Coinbase.svg.png"
-      />
-      <img src="https://asset.brandfetch.io/iduNFh7dB2/idVpSt1chL.png" />
-      <img src="https://1kx.network/_next/static/media/logo.2b9479b4.svg" />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Coinmarketcap_svg_logo.svg/2560px-Coinmarketcap_svg_logo.svg.png"
-      />
+    <div class="flex items-center gap-20">
+      <div class="text-4xl font-semibold">Backed by</div>
+      <div class="flex items-center gap-20">
+        <img class="h-8" src={coinbase.src} />
+        <img class="h-8" src={CoinFund.src} />
+        <img class="h-8" src={logo1k.src} />
+        <img class="h-20" src={cmc.src} />
+      </div>
     </div>
-  </div> -->
   </div>
 </Layout>

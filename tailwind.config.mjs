@@ -22,6 +22,9 @@ export default {
         ],
         "card-description": ["18px", "1.4em"],
       },
+      maxWidth: {
+        1440: "1440px",
+      },
     },
   },
   plugins: [],
