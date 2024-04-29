@@ -1,3 +1,7 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
 <!-- 
  flex       - cоздаем flex контейнер 
  justify-*  - выравниваем по оси
@@ -5,26 +9,57 @@
  gap - відстань
 
  -->
-<div class="flex flex-col items-center gap-4">
-  <div class="bg-yellow-300 text-3xl font-bold max-w-[300px] text-center">
-    4 years of building user-friendly web3 products used by millions
-  </div>
+<Layout>
+  <div class="flex flex-col items-center gap-20 py-20">
+    <div class="text-heading font-semibold text-center">
+      4 years of building <br /> user-friendly web3 products <br /> used by millions
+    </div>
 
-  <div aria-label="cards" class="bg-blue-400">
-    <div aria-label="card">
-      <div>
-        <div>$300,000,000+</div>
-        <div>worth of NFTs sold through Rarible products</div>
+    <div aria-label="cards" class="flex flex-col gap-4">
+      <div
+        aria-label="card NFT"
+        class="p-10 border border-gray-700/70 rounded-3xl"
+      >
+        <div class="text-card-heading">$300,000,000+</div>
+        <div class="text-card-description text-gray-400">
+          worth of NFTs sold through Rarible products
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <div
+          aria-label="card Users"
+          class="p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">1,000,000+</div>
+          <div class="text-card-description text-gray-400">
+            monthly Active Users
+          </div>
+        </div>
+
+        <div
+          aria-label="card Followers"
+          class="p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">1,000,000+</div>
+          <div class="text-card-description text-gray-400">
+            social media followers
+          </div>
+        </div>
+
+        <div
+          aria-label="card Marketplaces"
+          class="p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">5,000+</div>
+          <div class="text-card-description text-gray-400">
+            marketplaces powered by RaribleX
+          </div>
+        </div>
       </div>
     </div>
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
 
-  <div class="bg-green-500 flex gap-1">
+    <!-- <div class="bg-green-500 flex gap-1">
     <div>Backed by</div>
     <div class="*:h-6 *:w-36 *:object-scale-down flex">
       <img
@@ -36,5 +71,6 @@
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Coinmarketcap_svg_logo.svg/2560px-Coinmarketcap_svg_logo.svg.png"
       />
     </div>
+  </div> -->
   </div>
-</div>
+</Layout>
