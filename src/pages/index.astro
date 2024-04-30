@@ -4,6 +4,7 @@ import CoinFund from "../images/CoinFund.svg";
 import cmc from "../images/cmc.svg";
 import logo1k from "../images/1k.svg";
 import coinbase from "../images/coinbase.svg";
+import heroimage from "../images/heroimage.png";
 ---
 
 <!-- 
@@ -14,66 +15,75 @@ import coinbase from "../images/coinbase.svg";
 
  -->
 <Layout>
-  <div class="flex flex-col items-center gap-20 py-20 w-full">
-    <div class="text-heading font-semibold text-center">
-      4 years of building <br /> user-friendly web3 products <br /> used by millions
+  <div class="flex flex-col gap-20">
+    <div aria-label="hero block">
+      <img class="rounded-3xl" src={heroimage.src} />
     </div>
 
-    <div aria-label="cards" class="flex flex-col gap-4 w-full">
-      <div
-        aria-label="card NFT"
-        class="p-10 border border-gray-700/70 rounded-3xl"
-      >
-        <div class="text-card-heading">$300,000,000+</div>
-        <div class="text-card-description text-gray-400">
-          worth of NFTs sold through Rarible products
+    <div
+      aria-label="cards block"
+      class="flex flex-col items-center gap-20 py-20 w-full"
+    >
+      <div class="text-heading font-semibold text-center">
+        4 years of building <br /> user-friendly web3 products <br /> used by millions
+      </div>
+
+      <div aria-label="cards" class="flex flex-col gap-4 w-full">
+        <div
+          aria-label="card NFT"
+          class="p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">$300,000,000+</div>
+          <div class="text-card-description text-gray-400">
+            worth of NFTs sold through Rarible products
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div
+            aria-label="card Users"
+            class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+          >
+            <div class="text-card-heading">1,000,000+</div>
+            <div class="text-card-description text-gray-400">
+              monthly Active Users
+            </div>
+          </div>
+
+          <div
+            aria-label="card Followers"
+            class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+          >
+            <div class="text-card-heading">1,000,000+</div>
+            <div class="text-card-description text-gray-400">
+              social media followers
+            </div>
+          </div>
+
+          <div
+            aria-label="card Marketplaces"
+            class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+          >
+            <div class="text-card-heading">5,000+</div>
+            <div class="text-card-description text-gray-400">
+              marketplaces powered by RaribleX
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="flex gap-4">
-        <div
-          aria-label="card Users"
-          class="p-10 border border-gray-700/70 rounded-3xl"
-        >
-          <div class="text-card-heading">1,000,000+</div>
-          <div class="text-card-description text-gray-400">
-            monthly Active Users
-          </div>
-        </div>
-
-        <div
-          aria-label="card Followers"
-          class="p-10 border border-gray-700/70 rounded-3xl"
-        >
-          <div class="text-card-heading">1,000,000+</div>
-          <div class="text-card-description text-gray-400">
-            social media followers
-          </div>
-        </div>
-
-        <div
-          aria-label="card Marketplaces"
-          class="p-10 border border-gray-700/70 rounded-3xl"
-        >
-          <div class="text-card-heading">5,000+</div>
-          <div class="text-card-description text-gray-400">
-            marketplaces powered by RaribleX
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex items-center gap-20">
-      <div class="text-4xl font-semibold">Backed by</div>
       <div class="flex items-center gap-20">
-        <img class="h-8" src={coinbase.src} />
-        <img class="h-8" src={CoinFund.src} />
-        <img class="h-8" src={logo1k.src} />
-        <img class="h-20" src={cmc.src} />
+        <div class="text-4xl font-semibold">Backed by</div>
+        <div class="flex items-center gap-20">
+          <img class="h-8" src={coinbase.src} />
+          <img class="h-8" src={CoinFund.src} />
+          <img class="h-8" src={logo1k.src} />
+          <img class="h-20" src={cmc.src} />
+        </div>
       </div>
     </div>
 
-    <div aria-label="text with button">
+    <div aria-label="textcard block">
       <div aria-label="text" class="flex justify-center text-heading">
         Grow your business with Web3
       </div>
