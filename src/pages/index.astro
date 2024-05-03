@@ -5,6 +5,7 @@ import cmc from "../images/cmc.svg";
 import logo1k from "../images/1k.svg";
 import coinbase from "../images/coinbase.svg";
 import heroimage from "../images/heroimage.png";
+import arrowright from "..//images/arrow-right.svg";
 ---
 
 <!-- 
@@ -17,7 +18,26 @@ import heroimage from "../images/heroimage.png";
 <Layout>
   <div class="flex flex-col gap-20">
     <div aria-label="hero block">
-      <img class="rounded-3xl" src={heroimage.src} />
+      <div aria-label="hero text" class="flex justify-between">
+        <div class="text-heading font-semibold flex m-20">
+          Launch a custom <br /> web3 marketplace <br /> for your brand
+        </div>
+        <div aria-label="hero button" class="flex flex-col gap-8 m-24">
+          <div class="text-heading-description">
+            Helping web3 market leaders and Fortune 500 companies <br /> supercharge
+            digital collectibles
+          </div>
+          <button
+            class="text-small-button bg-yellow-300 text-black border rounded-full px-6 pt-6 pb-6 flex justify-between items-center"
+          >
+            <div>CREATE MARKETPLACE</div>
+            <img class="ml-3" src={arrowright.src} />
+          </button>
+        </div>
+      </div>
+      <div class="p-2 border rounded-3xl border-gray-400">
+        <img class="rounded-3xl" src={heroimage.src} />
+      </div>
     </div>
 
     <div

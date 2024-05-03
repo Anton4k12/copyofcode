@@ -13,6 +13,20 @@ export default {
             fontWeight: 600,
           },
         ],
+        "heading-description": [
+          "22px",
+          {
+            lineHeight: "1.3em",
+            fontWeight: 400,
+          },
+        ],
+        "small-button": [
+          "20px",
+          {
+            lineHeight: "1.3em",
+            fontWeight: 600,
+          },
+        ],
         "card-heading": [
           "52px",
           {
