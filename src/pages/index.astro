@@ -7,6 +7,7 @@ import coinbase from "../images/coinbase.svg";
 import heroimage from "../images/heroimage.png";
 import arrowright from "../images/arrow-right.svg";
 import Header from "../components/header.astro";
+import HoverCard from "../components/HoverCard.astro";
 ---
 
 <!-- 
@@ -16,8 +17,6 @@ import Header from "../components/header.astro";
  gap - відстань
 
  -->
-<Header />
-
 <Layout>
   <div class="flex flex-col gap-20">
     <div aria-label="hero block">
@@ -127,118 +126,39 @@ import Header from "../components/header.astro";
     </div>
 
     <div aria-label="hovers" class="flex flex-col gap-5">
-      <div aria-label="hover block">
-        <div aria-label="L1/L2s">
-          <div
-            class="h-96 border rounded-3xl border-gray-700/70 overflow-hidden group relative"
-          >
-            <div class="relative p-10 text-heading z-10">L1/L2s</div>
-            <img
-              class="object-cover hover:opacity-50 opacity-0 transition-opacity duration-500 absolute top-0"
-              src="/patterns.svg"
-            />
-            <div aria-label="description" class="flex gap-4">
-              <div class="text-heading-description py-2 px-10">
-                Prepare for the next stage of the Internet where NFT are <br /> as
-                commonplace as emails.
-              </div>
-              <div aria-label="rounded blocks" class="font-mono p-4">
-                <div
-                  class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-                >
-                  MISSION-CRITICAL INFRASTRUCTURE FOR THE BUILDERS
-                </div>
-                <div
-                  class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-                >
-                  ORGANIC COMMUNITY GROWTH VIA NFTS
-                </div>
-                <div
-                  class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-                >
-                  COLLABS WITH WEB2/WEB3 BRANDS AND POPULAR IPS
-                </div>
-                <div
-                  class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-                >
-                  INSTANT ACCESS TO A MASSIVE CREATOR AND COLLECTOR NETWORK
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HoverCard
+        heading="L1/L2s"
+        backgroundSrc="patterns.svg"
+        description="Prepare for the next stage of the Internet where NFT are as commonplace as emails."
+        cards={[
+          "MISSION-CRITICAL INFRASTRUCTURE FOR THE BUILDERS",
+          "ORGANIC COMMUNITY GROWTH VIA NFTS",
+          "COLLABS WITH WEB2/WEB3 BRANDS AND POPULAR IPS",
+          "INSTANT ACCESS TO A MASSIVE CREATOR AND COLLECTOR NETWORK",
+        ]}
+      />
 
-      <div aria-label="Toys">
-        <div
-          class="h-96 border rounded-3xl border-gray-700/70 overflow-hidden group relative"
-        >
-          <div class="relative p-10 text-heading z-10">Toys</div>
-          <img
-            class="object-cover hover:opacity-50 opacity-0 transition-opacity duration-500 absolute top-0"
-            src="/pattern2.svg"
-          />
-          <div aria-label="description" class="flex gap-10">
-            <div class="text-heading-description py-2 px-10">
-              Bridge the gap between traditional toy collecting <br /> and the digital
-              age.
-            </div>
-            <div aria-label="rounded blocks" class="font-mono p-4">
-              <div
-                class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-              >
-                UNLOCK NEW REVENUE STREAMS
-              </div>
-              <div
-                class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-              >
-                REACH NEW WEB3 AUDIENCE OF COLLECTORS
-              </div>
-              <div
-                class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-              >
-                NEW PRODUCT LINE TO RE-ENGAGE YOUR EXISTING CUSTOMERS
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HoverCard
+        heading="Toys"
+        backgroundSrc="pattern2.svg"
+        description="Bridge the gap between traditional toy collecting and the digital age.."
+        cards={[
+          "UNLOCK NEW REVENUE STREAMS",
+          "REACH NEW WEB3 AUDIENCE OF COLLECTORS",
+          "NEW PRODUCT LINE TO RE-ENGAGE YOUR EXISTING CUSTOMERS",
+        ]}
+      />
 
-      <div aria-label="Web3 ecosystems">
-        <div
-          class="h-96 border rounded-3xl border-gray-700/70 overflow-hidden group relative"
-        >
-          <div class="relative p-10 text-heading z-10">Web3 ecosystems</div>
-          <img
-            class="object-cover hover:opacity-50 opacity-0 transition-opacity duration-500 absolute top-0"
-            src="/pattern3.svg"
-          />
-          <div aria-label="description" class="flex gap-10">
-            <div class="text-heading-description py-2 px-10">
-              Get a go-to platform tailored specifically to your <br /> ecosystem.
-              No matter the scale.
-            </div>
-            <div aria-label="rounded blocks" class="font-mono p-4">
-              <div
-                class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-              >
-                CUSTOM FEATURES: UI, REWARDS PROGRAMS, NATIVE TOKEN SUPPORT AND
-                MUCH MORE
-              </div>
-              <div
-                class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-              >
-                ON-BRAND EXPERIENCE FOR YOUR CUSTOMERS
-              </div>
-              <div
-                class="border rounded-3xl border-gray-500 bg-gray-800 p-0.5 px-2"
-              >
-                OPTIMAL RETENTION — NO NEED TO SEND YOUR USERS ELSEWHERE
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HoverCard
+        heading="Web3 ecosystems"
+        backgroundSrc="pattern3.svg"
+        description="Get a go-to platform tailored specifically to your ecosystem. No matter the scale."
+        cards={[
+          "CUSTOM FEATURES: UI, REWARDS PROGRAMS, NATIVE TOKEN SUPPORT AND MUCH MORE",
+          "ON-BRAND EXPERIENCE FOR YOUR CUSTOMERS",
+          "OPTIMAL RETENTION — NO NEED TO SEND YOUR USERS ELSEWHERE",
+        ]}
+      />
     </div>
   </div>
 </Layout>
