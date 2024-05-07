@@ -12,16 +12,32 @@ import discord from "../images/discord.svg";
   <div aria-label="links">
     <div aria-label="email" class="flex flex-col gap-4">
       <div class="text-inserting">Stay in the loop</div>
-      <input type="email" class="max-w-40" />
+
+      <div>
+        <input
+          type="email"
+          class="max-w-40 rounded-lg py-2 px-4"
+          placeholder="Enter your email"
+        />
+        <button class="bg-yellow-400 py-2 px-4 rounded-lg text-black">
+          Subscribe
+        </button>
+      </div>
     </div>
     <div aria-label="end of the site" class="flex flex-col gap-20">
       <div aria-label="socials" class="flex justify-end gap-20">
-        <div aria-label="first list" class="flex flex-col gap-3 text-zinc-400">
+        <div
+          aria-label="first list"
+          class="flex flex-col gap-3 text-zinc-400 *:cursor-pointer"
+        >
           <div class="hover:text-yellow-300">Marketplace</div>
           <div class="hover:text-yellow-300">API</div>
           <div class="hover:text-yellow-300">RARI Foundation</div>
         </div>
-        <div aria-label="second list" class="flex flex-col gap-3 text-zinc-400">
+        <div
+          aria-label="second list"
+          class="flex flex-col gap-3 text-zinc-400 *:cursor-pointer"
+        >
           <div class="hover:text-yellow-300">Blog</div>
           <div class="hover:text-yellow-300">Careers</div>
           <div class="hover:text-yellow-300">Help center</div>

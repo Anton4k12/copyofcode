@@ -2,18 +2,20 @@
 import headerlogo from "../images/header-logo.svg";
 ---
 
-<header class="flex justify-between p-7">
+<header class="flex justify-between p-7 fixed w-full z-50">
   <img class="h-10" src={headerlogo.src} />
-  <div class="flex justify-start gap-2">
-    <div class="hover:bg-gray-800 transition rounded-lg py-2 px-4">
+  <div
+    class="flex justify-start gap-2 backdrop-blur-xl rounded-full bg-black/20"
+  >
+    <div class="hover:bg-zinc-800 transition rounded-lg py-2 px-4">
       Solutions
     </div>
-    <div class="py-2 px-4 hover:bg-gray-800 transition rounded-lg">
+    <div class="py-2 px-4 hover:bg-zinc-800 transition rounded-lg">
       Success Stories
     </div>
-    <div class="py-2 px-4 hover:bg-gray-800 transition rounded-lg">News</div>
+    <div class="py-2 px-4 hover:bg-zinc-800 transition rounded-lg">News</div>
   </div>
-  <div class="py-2 px-4 border border-gray-700/70 rounded-[100px]">
+  <div class="py-2 px-4 border border-zinc-700/70 rounded-[100px]">
     LET'S TALK
   </div>
 </header>
