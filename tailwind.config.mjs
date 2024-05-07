@@ -13,6 +13,13 @@ export default {
             fontWeight: 600,
           },
         ],
+        inserting: [
+          "24px",
+          {
+            lineHeight: "1.2em",
+            fontWeight: 600,
+          },
+        ],
         "heading-description": [
           "22px",
           {

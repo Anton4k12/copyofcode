@@ -8,6 +8,7 @@ import heroimage from "../images/heroimage.png";
 import arrowright from "../images/arrow-right.svg";
 import Header from "../components/header.astro";
 import HoverCard from "../components/HoverCard.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!-- 
@@ -118,7 +119,7 @@ import HoverCard from "../components/HoverCard.astro";
       <div class="my-20">
         <button
           aria-label="button"
-          class="flex whitespace-nowrap gap-24 py-40 px-80 text-heading border rounded-[400px] text-black bg-yellow-300"
+          class="flex whitespace-nowrap gap-24 py-40 px-80 text-heading border rounded-[400px] text-black bg-yellow-300 w-full"
         >
           BECOME A SUCCESS STORY
         </button>
@@ -160,5 +161,7 @@ import HoverCard from "../components/HoverCard.astro";
         ]}
       />
     </div>
+
+    <Footer />
   </div>
 </Layout>

@@ -1,0 +1,45 @@
+---
+import footerLogo from "../images/footer-logo.svg";
+import x from "../images/x.svg";
+import instagram from "../images/instagram.svg";
+import discord from "../images/discord.svg";
+---
+
+<footer>
+  <div aria-label="logo">
+    <img src={footerLogo.src} />
+  </div>
+  <div aria-label="links">
+    <div aria-label="email" class="flex flex-col gap-4">
+      <div class="text-inserting">Stay in the loop</div>
+      <input type="email" class="max-w-40" />
+    </div>
+    <div aria-label="end of the site" class="flex flex-col gap-20">
+      <div aria-label="socials" class="flex justify-end gap-20">
+        <div aria-label="first list" class="flex flex-col gap-3 text-zinc-400">
+          <div class="hover:text-yellow-300">Marketplace</div>
+          <div class="hover:text-yellow-300">API</div>
+          <div class="hover:text-yellow-300">RARI Foundation</div>
+        </div>
+        <div aria-label="second list" class="flex flex-col gap-3 text-zinc-400">
+          <div class="hover:text-yellow-300">Blog</div>
+          <div class="hover:text-yellow-300">Careers</div>
+          <div class="hover:text-yellow-300">Help center</div>
+          <div class="hover:text-yellow-300">Brand Kit</div>
+        </div>
+        <div aria-label="social images" class="flex">
+          <img class="w-8 h-8" src={x.src} />
+          <img class="w-8 h-8" src={instagram.src} />
+          <img class="w-8 h-8" src={discord.src} />
+        </div>
+      </div>
+      <div aria-label="copyrights" class="flex justify-between p-10">
+        <div class="text-zinc-500">© 2023 Rarible, Inc.</div>
+        <div class="text-zinc-500">
+          Don’t like the forms? — partnerships@rarible.com
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+</footer>
