@@ -9,17 +9,21 @@ import discord from "../images/discord.svg";
   <div aria-label="logo">
     <img src={footerLogo.src} />
   </div>
-  <div aria-label="links">
+  <div aria-label="links" class="flex justify-between pt-10">
     <div aria-label="email" class="flex flex-col gap-4">
       <div class="text-inserting">Stay in the loop</div>
 
-      <div>
+      <div
+        class="relative w-fit border border-[rgb(255,245,0)] rounded-lg overflow-hidden"
+      >
         <input
           type="email"
-          class="max-w-40 rounded-lg py-2 px-4"
+          class="w-[275px] py-4 px-4 pr-32 text-black focus:outline-none"
           placeholder="Enter your email"
         />
-        <button class="bg-yellow-400 py-2 px-4 rounded-lg text-black">
+        <button
+          class="bg-[rgb(255,245,0)] py-2 px-4 text-black absolute right-0 h-full"
+        >
           Subscribe
         </button>
       </div>
@@ -43,10 +47,10 @@ import discord from "../images/discord.svg";
           <div class="hover:text-yellow-300">Help center</div>
           <div class="hover:text-yellow-300">Brand Kit</div>
         </div>
-        <div aria-label="social images" class="flex gap-8">
-          <img class="w-8 h-8" src={x.src} />
-          <img class="w-8 h-8" src={instagram.src} />
-          <img class="w-8 h-8" src={discord.src} />
+        <div aria-label="social images" class="flex gap-8 h-fit items-center">
+          <img class="w-7" src={x.src} />
+          <img class="w-7" src={instagram.src} />
+          <img class="w-8 translate-y-0.5" src={discord.src} />
         </div>
       </div>
       <div aria-label="copyrights" class="flex justify-between p-10">
