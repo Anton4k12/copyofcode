@@ -57,10 +57,13 @@ import Footer from "../components/footer.astro";
         4 years of building <br /> user-friendly web3 products <br /> used by millions
       </div>
 
-      <div aria-label="cards" class="flex flex-col gap-4 w-full">
+      <div
+        aria-label="cards"
+        class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full"
+      >
         <div
           aria-label="card NFT"
-          class="p-10 border border-gray-700/70 rounded-3xl"
+          class="p-10 border border-gray-700/70 rounded-3xl lg:col-span-3"
         >
           <div class="text-card-heading">$300,000,000+</div>
           <div class="text-card-description text-gray-400">
@@ -68,35 +71,33 @@ import Footer from "../components/footer.astro";
           </div>
         </div>
 
-        <div class="flex gap-4">
-          <div
-            aria-label="card Users"
-            class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
-          >
-            <div class="text-card-heading">1,000,000+</div>
-            <div class="text-card-description text-gray-400">
-              monthly Active Users
-            </div>
+        <div
+          aria-label="card Users"
+          class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">1,000,000+</div>
+          <div class="text-card-description text-gray-400">
+            monthly Active Users
           </div>
+        </div>
 
-          <div
-            aria-label="card Followers"
-            class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
-          >
-            <div class="text-card-heading">1,000,000+</div>
-            <div class="text-card-description text-gray-400">
-              social media followers
-            </div>
+        <div
+          aria-label="card Followers"
+          class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">1,000,000+</div>
+          <div class="text-card-description text-gray-400">
+            social media followers
           </div>
+        </div>
 
-          <div
-            aria-label="card Marketplaces"
-            class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
-          >
-            <div class="text-card-heading">5,000+</div>
-            <div class="text-card-description text-gray-400">
-              marketplaces powered by RaribleX
-            </div>
+        <div
+          aria-label="card Marketplaces"
+          class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+        >
+          <div class="text-card-heading">5,000+</div>
+          <div class="text-card-description text-gray-400">
+            marketplaces powered by RaribleX
           </div>
         </div>
       </div>
