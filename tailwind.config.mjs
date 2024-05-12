@@ -13,6 +13,13 @@ export default {
             fontWeight: 600,
           },
         ],
+        "heading-mobile": [
+          "36px",
+          {
+            lineHeight: "1.2em",
+            fontWeight: 600,
+          },
+        ],
         inserting: [
           "24px",
           {
@@ -39,6 +46,13 @@ export default {
           {
             lineHeight: "1.1em",
             fontWeight: 600,
+          },
+        ],
+        "hovercard-description": [
+          "16px",
+          {
+            lineHeight: "1.2em",
+            fontWeight: 400,
           },
         ],
         "card-description": ["18px", "1.4em"],
