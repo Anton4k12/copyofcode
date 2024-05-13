@@ -1,55 +1,36 @@
 ---
 import arrowright from "../images/arrow-right.svg";
+import Video from "../components/Video.astro";
 ---
 
-<div
-  aria-label="hero"
-  class="flex flex-col gap-3 lg:flex-row lg:justify-between"
->
+<div class="flex flex-col gap-16 lg:gap-20">
   <div
-    class="mx-auto text-center text-heading-mobile font-semibold lg:text-start lg:text-heading"
+    aria-label="hero"
+    class="flex flex-col items-center gap-3 lg:flex-row lg:justify-between lg:gap-0"
   >
-    Launch a custom <br /> web3 marketplace for your brand
-  </div>
-  <div class="flex flex-col gap-10 pl-20">
-    <p
-      class="text-center text-heading-description text-zinc-400/80 lg:text-start lg:text-white"
+    <h1
+      class="mx-auto text-pretty text-center text-heading-mobile font-semibold lg:text-start lg:text-heading"
     >
-      Helping web3 market leaders and Fortune 500 companies supercharge digital
-      collectibles
-    </p>
-    <button
-      class="flex w-full items-center justify-between rounded-full border bg-[rgb(255,248,0)] px-6 py-6 text-small-button text-black"
-    >
-      <div>CREATE MARKETPLACE</div>
-      <img src={arrowright.src} />
-    </button>
+      <span>Launch a custom</span>
+      <br />
+      <span>web3 marketplace <br class="sm:hidden" /> for your brand</span>
+    </h1>
+
+    <div class="flex flex-col gap-10 lg:pl-20">
+      <p
+        class="text-balance text-center text-lg text-zinc-400/80 lg:text-start lg:text-[22px] lg:text-white"
+      >
+        Helping web3 market leaders and Fortune 500 companies supercharge
+        digital collectibles
+      </p>
+      <button
+        class="flex w-full items-center justify-between rounded-full bg-[rgb(255,248,0)] py-6 pl-10 pr-8 text-start text-xl font-semibold leading-[1.3em] text-black"
+      >
+        <div>CREATE MARKETPLACE</div>
+        <img src={arrowright.src} />
+      </button>
+    </div>
   </div>
 
-  <!-- <div
-      class="text-heading-description lg:hidden text-center text-zinc-400/80"
-    >
-      Helping web3 market leaders and Fortune 500 companies supercharge digital <br
-      /> collectibles
-    </div>
-    <div aria-label="button" class="flex justify-center">
-      <button
-        class="w-full text-small-button bg-[rgb(255,248,0)] text-black border rounded-full px-6 py-6 flex justify-between items-center lg:hidden"
-      >
-        <div>CREATE MARKETPLACE</div>
-        <img src={arrowright.src} />
-      </button>
-    </div>
-    <div aria-label="hero button" class="flex flex-col gap-8 mx-auto py-5">
-      <div class="text-heading-description hidden lg:block">
-        Helping web3 market leaders and Fortune 500 companies <br /> supercharge
-        digital collectibles
-      </div>
-      <button
-        class="text-small-button bg-[rgb(255,248,0)] text-black border rounded-full px-6 py-6 lg:flex justify-between items-center hidden"
-      >
-        <div>CREATE MARKETPLACE</div>
-        <img src={arrowright.src} />
-      </button>
-    </div> -->
+  <Video />
 </div>
