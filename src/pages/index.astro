@@ -142,25 +142,19 @@ import Footer from "../components/footer.astro";
       <div aria-label="text" class="lg:flex justify-center text-heading hidden">
         Grow your business with Web3
       </div>
-      <div aria-label="text" class="flex justify-center text-heading-mobile">
+      <div
+        aria-label="text"
+        class="flex justify-center text-heading-mobile lg:hidden"
+      >
         Grow your business with Web3
       </div>
-      <div class="">
-        <button
-          aria-label="button"
-          class="py-40 px-80 whitespace-nowrap text-heading border rounded-full text-black bg-[rgb(255,248,0)] w-full hidden lg:flex"
-        >
-          BECOME A SUCCESS STORY
-        </button>
-      </div>
-      <div class="">
-        <button
-          aria-label="button"
-          class="flex py-6 px-12 text-small-button border rounded-full text-black bg-[rgb(255,248,0)] w-full lg:hidden justify-center"
-        >
-          BECOME A SUCCESS STORY
-        </button>
-      </div>
+
+      <button
+        aria-label="button"
+        class="lg:py-40 text-center justify-center py-6 px-12 whitespace-nowrap lg:text-heading border rounded-full text-black bg-[rgb(255,248,0)] w-full flex text-small-button"
+      >
+        BECOME A SUCCESS STORY
+      </button>
     </div>
 
     <div aria-label="hovers" class="flex flex-col gap-5">
