@@ -1,0 +1,55 @@
+---
+import arrowright from "../images/arrow-right.svg";
+---
+
+<div
+  aria-label="hero"
+  class="flex flex-col gap-3 lg:flex-row lg:justify-between"
+>
+  <div
+    class="mx-auto text-center text-heading-mobile font-semibold lg:text-start lg:text-heading"
+  >
+    Launch a custom <br /> web3 marketplace for your brand
+  </div>
+  <div class="flex flex-col gap-10 pl-20">
+    <p
+      class="text-center text-heading-description text-zinc-400/80 lg:text-start lg:text-white"
+    >
+      Helping web3 market leaders and Fortune 500 companies supercharge digital
+      collectibles
+    </p>
+    <button
+      class="flex w-full items-center justify-between rounded-full border bg-[rgb(255,248,0)] px-6 py-6 text-small-button text-black"
+    >
+      <div>CREATE MARKETPLACE</div>
+      <img src={arrowright.src} />
+    </button>
+  </div>
+
+  <!-- <div
+      class="text-heading-description lg:hidden text-center text-zinc-400/80"
+    >
+      Helping web3 market leaders and Fortune 500 companies supercharge digital <br
+      /> collectibles
+    </div>
+    <div aria-label="button" class="flex justify-center">
+      <button
+        class="w-full text-small-button bg-[rgb(255,248,0)] text-black border rounded-full px-6 py-6 flex justify-between items-center lg:hidden"
+      >
+        <div>CREATE MARKETPLACE</div>
+        <img src={arrowright.src} />
+      </button>
+    </div>
+    <div aria-label="hero button" class="flex flex-col gap-8 mx-auto py-5">
+      <div class="text-heading-description hidden lg:block">
+        Helping web3 market leaders and Fortune 500 companies <br /> supercharge
+        digital collectibles
+      </div>
+      <button
+        class="text-small-button bg-[rgb(255,248,0)] text-black border rounded-full px-6 py-6 lg:flex justify-between items-center hidden"
+      >
+        <div>CREATE MARKETPLACE</div>
+        <img src={arrowright.src} />
+      </button>
+    </div> -->
+</div>

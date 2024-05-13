@@ -3,29 +3,31 @@ import raribleLogo from "../images/header-logo.svg";
 import raribleIcon from "../images/rarible-icon.svg";
 ---
 
-<header class="justify-between p-7 fixed w-full z-50 lg:flex hidden">
-  <img class="h-10" src={raribleLogo.src} />
+<header>
+  <div class="fixed z-50 hidden w-full justify-between p-7 lg:flex">
+    <img class="h-10" src={raribleLogo.src} />
+    <div
+      class="flex justify-start gap-2 rounded-full bg-black/20 backdrop-blur-xl"
+    >
+      <div class="rounded-lg px-4 py-2 transition hover:bg-zinc-800">
+        Solutions
+      </div>
+      <div class="rounded-lg px-4 py-2 transition hover:bg-zinc-800">
+        Success Stories
+      </div>
+      <div class="rounded-lg px-4 py-2 transition hover:bg-zinc-800">News</div>
+    </div>
+    <div class="rounded-full border border-white/20 px-4 py-2 backdrop-blur-xl">
+      LET'S TALK
+    </div>
+  </div>
   <div
-    class="flex justify-start gap-2 backdrop-blur-xl rounded-full bg-black/20"
+    class="fixed left-2 right-2 top-2 z-50 flex items-center justify-between rounded-2xl bg-black/20 p-4 backdrop-blur-xl lg:hidden"
   >
-    <div class="hover:bg-zinc-800 transition rounded-lg py-2 px-4">
-      Solutions
+    <img class="h-10" src={raribleIcon.src} />
+    <div class="flex flex-col gap-1">
+      <div class="h-0.5 w-6 bg-white"></div>
+      <div class="h-0.5 w-6 bg-white"></div>
     </div>
-    <div class="py-2 px-4 hover:bg-zinc-800 transition rounded-lg">
-      Success Stories
-    </div>
-    <div class="py-2 px-4 hover:bg-zinc-800 transition rounded-lg">News</div>
-  </div>
-  <div class="py-2 px-4 border border-white/20 rounded-full backdrop-blur-xl">
-    LET'S TALK
-  </div>
-</header>
-<header
-  class="lg:hidden flex justify-between p-4 fixed top-2 left-2 right-2 z-50 items-center bg-black/20 backdrop-blur-xl rounded-2xl"
->
-  <img class="h-10" src={raribleIcon.src} />
-  <div class="flex flex-col gap-1">
-    <div class="bg-white h-0.5 w-6"></div>
-    <div class="bg-white h-0.5 w-6"></div>
   </div>
 </header>

@@ -12,7 +12,7 @@ import discord from "../images/discord.svg";
     </div>
     <div
       aria-label="links"
-      class="lg:flex-row flex flex-col lg:justify-between justify-center items-center lg:items-stretch pt-10 gap-16"
+      class="flex flex-col items-center justify-center gap-16 pt-10 lg:flex-row lg:items-stretch lg:justify-between"
     >
       <div
         aria-label="email"
@@ -21,28 +21,28 @@ import discord from "../images/discord.svg";
         <div class="text-inserting">Stay in the loop</div>
 
         <div
-          class="relative w-fit border border-[rgb(255,245,0)] rounded-lg overflow-hidden"
+          class="relative w-fit overflow-hidden rounded-lg border border-[rgb(255,245,0)]"
         >
           <input
             type="email"
-            class="lg:w-[275px] sm:w-[400px] lg:py-4 lg:px-4 py-2 px-2 pr-32 text-black focus:outline-none"
+            class="px-2 py-2 pr-32 text-black focus:outline-none sm:w-[400px] lg:w-[275px] lg:px-4 lg:py-4"
             placeholder="Enter your email"
           />
           <button
-            class="bg-[rgb(255,245,0)] py-2 px-4 text-black absolute right-0 h-full"
+            class="absolute right-0 h-full bg-[rgb(255,245,0)] px-4 py-2 text-black"
           >
             Subscribe
           </button>
         </div>
       </div>
-      <div aria-label="end of the site" class="flex flex-col lg:gap-20 gap-10">
+      <div aria-label="end of the site" class="flex flex-col gap-10 lg:gap-20">
         <div
           aria-label="socials"
-          class="flex lg:justify-end justify-center gap-20"
+          class="flex justify-center gap-20 lg:justify-end"
         >
           <div
             aria-label="first list"
-            class="flex flex-col gap-3 text-zinc-400 *:cursor-pointer text-center lg:text-start"
+            class="flex flex-col gap-3 text-center text-zinc-400 *:cursor-pointer lg:text-start"
           >
             <div class="hover:text-yellow-300">Marketplace</div>
             <div class="hover:text-yellow-300">API</div>
@@ -50,7 +50,7 @@ import discord from "../images/discord.svg";
           </div>
           <div
             aria-label="second list"
-            class="flex flex-col gap-3 text-zinc-400 *:cursor-pointer text-center lg:text-start"
+            class="flex flex-col gap-3 text-center text-zinc-400 *:cursor-pointer lg:text-start"
           >
             <div class="hover:text-yellow-300">Blog</div>
             <div class="hover:text-yellow-300">Careers</div>
@@ -60,7 +60,7 @@ import discord from "../images/discord.svg";
 
           <div
             aria-label="social images"
-            class="lg:flex gap-8 h-fit items-center hidden"
+            class="hidden h-fit items-center gap-8 lg:flex"
           >
             <img class="w-7" src={x.src} />
             <img class="w-7" src={instagram.src} />
@@ -70,7 +70,7 @@ import discord from "../images/discord.svg";
 
         <div
           aria-label="social images"
-          class="flex gap-8 h-fit items-center lg:hidden justify-center"
+          class="flex h-fit items-center justify-center gap-8 lg:hidden"
         >
           <img class="w-7" src={x.src} />
           <img class="w-7" src={instagram.src} />
@@ -79,7 +79,7 @@ import discord from "../images/discord.svg";
 
         <div
           aria-label="copyrights"
-          class="lg:flex justify-between p-10 hidden"
+          class="hidden justify-between p-10 lg:flex"
         >
           <div class="text-zinc-500">© 2023 Rarible, Inc.</div>
           <div class="text-zinc-500">
@@ -90,7 +90,7 @@ import discord from "../images/discord.svg";
     </div>
     <div
       aria-label="copyrights"
-      class="flex flex-col justify-center p-10 lg:hidden text-center gap-4"
+      class="flex flex-col justify-center gap-4 p-10 text-center lg:hidden"
     >
       <div class="text-zinc-500">
         Don’t like the forms? <br /> partnerships@rarible.com

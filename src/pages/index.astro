@@ -1,14 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import CoinFund from "../images/CoinFund.svg";
-import cmc from "../images/cmc.svg";
-import logo1k from "../images/1k.svg";
-import coinbase from "../images/coinbase.svg";
-import heroimage from "../images/heroimage.png";
-import arrowright from "../images/arrow-right.svg";
-import Header from "../components/header.astro";
+import Hero from "../components/Hero.astro";
 import HoverCard from "../components/HoverCard.astro";
 import Footer from "../components/footer.astro";
+import logo1k from "../images/1k.svg";
+import CoinFund from "../images/CoinFund.svg";
+import cmc from "../images/cmc.svg";
+import coinbase from "../images/coinbase.svg";
+import Layout from "../layouts/Layout.astro";
+import Video from "../components/Video.astro";
 ---
 
 <!-- 
@@ -19,78 +18,30 @@ import Footer from "../components/footer.astro";
 
  -->
 <Layout>
-  <div class="flex flex-col gap-20 lg:pt-20 pt-10">
-    <div aria-label="hero block" class="py-20 flex flex-col gap-20">
-      <div
-        aria-label="hero text"
-        class="lg:flex-row justify-between flex flex-col gap-4"
-      >
-        <div
-          class="text-heading-mobile lg:text-heading font-semibold mx-auto text-center lg:text-start"
-        >
-          Launch a custom <br /> web3 marketplace for your brand
-        </div>
-        <!-- <div class="text-heading-mobile font-semibold mx-auto flex lg:hidden">
-          Launch a custom <br /> web3 marketplace <br /> for your brand
-        </div> -->
-        <div
-          class="text-heading-description lg:hidden text-center text-zinc-400/80"
-        >
-          Helping web3 market leaders and Fortune 500 companies supercharge
-          digital <br /> collectibles
-        </div>
-        <div aria-label="button" class="flex justify-center">
-          <button
-            class="w-full text-small-button bg-[rgb(255,248,0)] text-black border rounded-full px-6 py-6 flex justify-between items-center lg:hidden"
-          >
-            <div>CREATE MARKETPLACE</div>
-            <img src={arrowright.src} />
-          </button>
-        </div>
-        <div aria-label="hero button" class="flex flex-col gap-8 mx-auto py-5">
-          <div class="text-heading-description hidden lg:block">
-            Helping web3 market leaders and Fortune 500 companies <br /> supercharge
-            digital collectibles
-          </div>
-          <button
-            class="text-small-button bg-[rgb(255,248,0)] text-black border rounded-full px-6 py-6 lg:flex justify-between items-center hidden"
-          >
-            <div>CREATE MARKETPLACE</div>
-            <img src={arrowright.src} />
-          </button>
-        </div>
-      </div>
-      <div aria-label="video" class="p-2 border rounded-3xl border-gray-400">
-        <video
-          class="rounded-2xl w-full"
-          autoplay
-          src="https://framerusercontent.com/assets/NCW967CVkaa2MCI6IFU5Q6f8.mp4"
-          loop=""
-          muted=""
-          playsinline=""></video>
-      </div>
-    </div>
+  <div class="flex flex-col gap-20 pt-10 lg:pt-20">
+    <Hero />
+    <Video />
 
     <div
       aria-label="cards block"
-      class="flex flex-col items-center gap-20 py-20 w-full"
+      class="flex w-full flex-col items-center gap-20 py-20"
     >
-      <div class="text-heading font-semibold text-center hidden lg:block">
+      <div class="hidden text-center text-heading font-semibold lg:block">
         4 years of building <br /> user-friendly web3 products <br /> used by millions
       </div>
-      <div class="text-heading-mobile font-semibold text-center lg:hidden">
+      <div class="text-center text-heading-mobile font-semibold lg:hidden">
         4 years of building <br /> user-friendly web3 products used by millions
       </div>
 
       <div
         aria-label="cards"
-        class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full text-center lg:text-start"
+        class="grid w-full grid-cols-1 gap-4 text-center lg:grid-cols-3 lg:text-start"
       >
         <div
           aria-label="card NFT"
-          class="p-10 border border-gray-700/70 rounded-3xl lg:col-span-3"
+          class="rounded-3xl border border-gray-700/70 p-10 lg:col-span-3"
         >
-          <div class="lg:text-card-heading text-heading-mobile">
+          <div class="text-heading-mobile lg:text-card-heading">
             $300,000,000+
           </div>
           <div class="text-card-description text-zinc-400">
@@ -100,9 +51,9 @@ import Footer from "../components/footer.astro";
 
         <div
           aria-label="card Users"
-          class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+          class="flex-grow rounded-3xl border border-gray-700/70 p-10"
         >
-          <div class="lg:text-card-heading text-heading-mobile">1,000,000+</div>
+          <div class="text-heading-mobile lg:text-card-heading">1,000,000+</div>
           <div class="text-card-description text-zinc-400">
             monthly Active Users
           </div>
@@ -110,9 +61,9 @@ import Footer from "../components/footer.astro";
 
         <div
           aria-label="card Followers"
-          class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+          class="flex-grow rounded-3xl border border-gray-700/70 p-10"
         >
-          <div class="lg:text-card-heading text-heading-mobile">1,000,000+</div>
+          <div class="text-heading-mobile lg:text-card-heading">1,000,000+</div>
           <div class="text-card-description text-zinc-400">
             social media followers
           </div>
@@ -120,18 +71,18 @@ import Footer from "../components/footer.astro";
 
         <div
           aria-label="card Marketplaces"
-          class="flex-grow p-10 border border-gray-700/70 rounded-3xl"
+          class="flex-grow rounded-3xl border border-gray-700/70 p-10"
         >
-          <div class="lg:text-card-heading text-heading-mobile">5,000+</div>
+          <div class="text-heading-mobile lg:text-card-heading">5,000+</div>
           <div class="text-card-description text-zinc-400">
             marketplaces powered by RaribleX
           </div>
         </div>
       </div>
 
-      <div class="lg:flex-row items-center gap-20 flex flex-col">
+      <div class="flex flex-col items-center gap-20 lg:flex-row">
         <div class="text-4xl font-semibold">Backed by</div>
-        <div class="lg:flex-row flex flex-col items-center lg:gap-20 gap-16">
+        <div class="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
           <img class="h-8" src={coinbase.src} />
           <img class="h-8" src={CoinFund.src} />
           <img class="h-8" src={logo1k.src} />
@@ -141,7 +92,7 @@ import Footer from "../components/footer.astro";
     </div>
 
     <div aria-label="textcard block" class="flex flex-col gap-4">
-      <div aria-label="text" class="lg:flex justify-center text-heading hidden">
+      <div aria-label="text" class="hidden justify-center text-heading lg:flex">
         Grow your business with Web3
       </div>
       <div
@@ -153,17 +104,17 @@ import Footer from "../components/footer.astro";
 
       <button
         aria-label="button"
-        class="lg:py-40 text-center justify-center py-6 px-12 whitespace-nowrap lg:text-heading border rounded-full text-black bg-[rgb(255,248,0)] w-full flex text-small-button"
+        class="flex w-full justify-center whitespace-nowrap rounded-full border bg-[rgb(255,248,0)] px-12 py-6 text-center text-small-button text-black lg:py-40 lg:text-heading"
       >
         BECOME A SUCCESS STORY
       </button>
     </div>
 
     <div aria-label="hovers" class="flex flex-col gap-5">
-      <div class="text-heading lg:flex text-center pb-20 hidden">
+      <div class="hidden pb-20 text-center text-heading lg:flex">
         Web3 is where the consumer experience revolution is already happening
       </div>
-      <div class="text-heading-mobile flex text-center pb-20 lg:hidden">
+      <div class="flex pb-20 text-center text-heading-mobile lg:hidden">
         Web3 is where the consumer experience revolution is already happening
       </div>
       <HoverCard
