@@ -25,9 +25,19 @@ import raribleIcon from "../images/rarible-icon.svg";
     class="fixed left-2 right-2 top-2 z-50 flex items-center justify-between rounded-2xl bg-black/20 p-4 backdrop-blur-xl lg:hidden"
   >
     <img class="h-10" src={raribleIcon.src} />
-    <div class="flex flex-col gap-1">
+    <button id="button-header" class="flex flex-col gap-1">
       <div class="h-0.5 w-6 bg-white"></div>
       <div class="h-0.5 w-6 bg-white"></div>
-    </div>
+    </button>
   </div>
 </header>
+
+<dialog id="header-dialog" class="m-0 h-screen w-screen">hello</dialog>
+
+<script>
+  let button = document.querySelector("#button-header");
+  let dialog = document.querySelector("#header-dialog");
+  button?.addEventListener("click", () => {
+    dialog.showModal();
+  });
+</script>
