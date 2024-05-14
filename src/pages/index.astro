@@ -2,10 +2,7 @@
 import Hero from "../components/Hero.astro";
 import HoverCard from "../components/HoverCard.astro";
 import Footer from "../components/footer.astro";
-import logo1k from "../images/1k.svg";
-import CoinFund from "../images/CoinFund.svg";
-import cmc from "../images/cmc.svg";
-import coinbase from "../images/coinbase.svg";
+import Stats from "../components/Stats.astro";
 import Layout from "../layouts/Layout.astro";
 import Video from "../components/Video.astro";
 ---
@@ -17,142 +14,76 @@ import Video from "../components/Video.astro";
  gap - відстань
 
  -->
-
 <Layout>
   <div class="flex flex-col gap-20 pt-[120px] lg:gap-60 lg:pt-40">
     <Hero />
 
-    <div
-      aria-label="cards block"
-      class="flex w-full flex-col items-center gap-20 py-20"
-    >
-      <div class="hidden text-center text-heading font-semibold lg:block">
-        4 years of building <br /> user-friendly web3 products <br /> used by millions
-      </div>
-      <div class="text-center text-heading-mobile font-semibold lg:hidden">
-        4 years of building <br /> user-friendly web3 products used by millions
-      </div>
+    <Stats />
 
-      <div
-        aria-label="cards"
-        class="grid w-full grid-cols-1 gap-4 text-center lg:grid-cols-3 lg:text-start"
-      >
-        <div
-          aria-label="card NFT"
-          class="rounded-3xl border border-gray-700/70 p-10 lg:col-span-3"
-        >
-          <div class="text-heading-mobile lg:text-card-heading">
-            $300,000,000+
-          </div>
-          <div class="text-card-description text-zinc-400">
-            worth of NFTs sold through Rarible products
-          </div>
-        </div>
-
-        <div
-          aria-label="card Users"
-          class="flex-grow rounded-3xl border border-gray-700/70 p-10"
-        >
-          <div class="text-heading-mobile lg:text-card-heading">1,000,000+</div>
-          <div class="text-card-description text-zinc-400">
-            monthly Active Users
-          </div>
-        </div>
-
-        <div
-          aria-label="card Followers"
-          class="flex-grow rounded-3xl border border-gray-700/70 p-10"
-        >
-          <div class="text-heading-mobile lg:text-card-heading">1,000,000+</div>
-          <div class="text-card-description text-zinc-400">
-            social media followers
-          </div>
-        </div>
-
-        <div
-          aria-label="card Marketplaces"
-          class="flex-grow rounded-3xl border border-gray-700/70 p-10"
-        >
-          <div class="text-heading-mobile lg:text-card-heading">5,000+</div>
-          <div class="text-card-description text-zinc-400">
-            marketplaces powered by RaribleX
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col items-center gap-20 lg:flex-row">
-        <div class="text-4xl font-semibold">Backed by</div>
-        <div class="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
-          <img class="h-8" src={coinbase.src} />
-          <img class="h-8" src={CoinFund.src} />
-          <img class="h-8" src={logo1k.src} />
-          <img class="h-20" src={cmc.src} />
-        </div>
-      </div>
-    </div>
-
-    <div aria-label="textcard block" class="flex flex-col gap-4">
+    <div aria-label="textcard block" class="flex flex-col gap-12 lg:gap-20">
       <div aria-label="text" class="hidden justify-center text-heading lg:flex">
         Grow your business with Web3
       </div>
       <div
         aria-label="text"
-        class="flex justify-center text-heading-mobile lg:hidden"
+        class="flex justify-center text-center text-heading-mobile lg:hidden"
       >
         Grow your business with Web3
       </div>
 
       <button
         aria-label="button"
-        class="flex w-full justify-center whitespace-nowrap rounded-full border bg-[rgb(255,248,0)] px-12 py-6 text-center text-small-button text-black lg:py-40 lg:text-heading"
+        class="flex w-full justify-center rounded-full border bg-[rgb(255,248,0)] px-12 py-6 text-center text-small-button text-black lg:py-40 lg:text-heading"
       >
         BECOME A SUCCESS STORY
       </button>
     </div>
 
-    <div aria-label="hovers" class="flex flex-col gap-5">
-      <div class="hidden pb-20 text-center text-heading lg:flex">
+    <div aria-label="hovers" class="flex flex-col gap-12 lg:gap-20">
+      <div class="hidden text-center text-heading lg:flex">
         Web3 is where the consumer experience revolution is already happening
       </div>
-      <div class="flex pb-20 text-center text-heading-mobile lg:hidden">
+      <div class="flex text-center text-heading-mobile lg:hidden">
         Web3 is where the consumer experience revolution is already happening
       </div>
-      <HoverCard
-        heading="L1/L2s"
-        backgroundSrc="patterns.svg"
-        description="Prepare for the next stage of the Internet where NFT are as commonplace as emails."
-        cards={[
-          "MISSION-CRITICAL INFRASTRUCTURE FOR THE BUILDERS",
-          "ORGANIC COMMUNITY GROWTH VIA NFTS",
-          "COLLABS WITH WEB2/WEB3 BRANDS AND POPULAR IPS",
-          "INSTANT ACCESS TO A MASSIVE CREATOR AND COLLECTOR NETWORK",
-        ]}
-        examples="Success Stories: Mintle Marketplace"
-      />
+      <div class="flex flex-col gap-4">
+        <HoverCard
+          heading="L1/L2s"
+          backgroundSrc="patterns.svg"
+          description="Prepare for the next stage of the Internet where NFT are as commonplace as emails."
+          cards={[
+            "MISSION-CRITICAL INFRASTRUCTURE FOR THE BUILDERS",
+            "ORGANIC COMMUNITY GROWTH VIA NFTS",
+            "COLLABS WITH WEB2/WEB3 BRANDS AND POPULAR IPS",
+            "INSTANT ACCESS TO A MASSIVE CREATOR AND COLLECTOR NETWORK",
+          ]}
+          examples="Success Stories: Mintle Marketplace"
+        />
 
-      <HoverCard
-        heading="Toys"
-        backgroundSrc="pattern2.svg"
-        description="Bridge the gap between traditional toy collecting and the digital age.."
-        cards={[
-          "UNLOCK NEW REVENUE STREAMS",
-          "REACH NEW WEB3 AUDIENCE OF COLLECTORS",
-          "NEW PRODUCT LINE TO RE-ENGAGE YOUR EXISTING CUSTOMERS",
-        ]}
-        examples="Examples: Mattel Creations, McFarlane Toys"
-      />
+        <HoverCard
+          heading="Toys"
+          backgroundSrc="pattern2.svg"
+          description="Bridge the gap between traditional toy collecting and the digital age.."
+          cards={[
+            "UNLOCK NEW REVENUE STREAMS",
+            "REACH NEW WEB3 AUDIENCE OF COLLECTORS",
+            "NEW PRODUCT LINE TO RE-ENGAGE YOUR EXISTING CUSTOMERS",
+          ]}
+          examples="Examples: Mattel Creations, McFarlane Toys"
+        />
 
-      <HoverCard
-        heading="Web3 ecosystems"
-        backgroundSrc="pattern3.svg"
-        description="Get a go-to platform tailored specifically to your ecosystem. No matter the scale."
-        cards={[
-          "CUSTOM FEATURES: UI, REWARDS PROGRAMS, NATIVE TOKEN SUPPORT AND MUCH MORE",
-          "ON-BRAND EXPERIENCE FOR YOUR CUSTOMERS",
-          "OPTIMAL RETENTION — NO NEED TO SEND YOUR USERS ELSEWHERE",
-        ]}
-        examples="Example: Mocaverse marketplace"
-      />
+        <HoverCard
+          heading="Web3 ecosystems"
+          backgroundSrc="pattern3.svg"
+          description="Get a go-to platform tailored specifically to your ecosystem. No matter the scale."
+          cards={[
+            "CUSTOM FEATURES: UI, REWARDS PROGRAMS, NATIVE TOKEN SUPPORT AND MUCH MORE",
+            "ON-BRAND EXPERIENCE FOR YOUR CUSTOMERS",
+            "OPTIMAL RETENTION — NO NEED TO SEND YOUR USERS ELSEWHERE",
+          ]}
+          examples="Example: Mocaverse marketplace"
+        />
+      </div>
     </div>
 
     <Footer />

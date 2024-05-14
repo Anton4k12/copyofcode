@@ -32,12 +32,25 @@ import raribleIcon from "../images/rarible-icon.svg";
   </div>
 </header>
 
-<dialog id="header-dialog" class="m-0 h-screen w-screen">hello</dialog>
+<dialog id="header-dialog" class="h-full w-full bg-black text-white">
+  <div class="flex items-center justify-between p-6">
+    <img class="h-10" src={raribleIcon.src} />
+    <button id="header-close-button" class="flex flex-col gap-1">
+      <div class="h-0.5 w-6 bg-white"></div>
+      <div class="h-0.5 w-6 bg-white"></div>
+    </button>
+  </div>
+  <hr class="border-zinc-500" />
+</dialog>
 
 <script>
-  let button = document.querySelector("#button-header");
-  let dialog = document.querySelector("#header-dialog");
-  button?.addEventListener("click", () => {
+  let openButton = document.querySelector("#button-header");
+  let dialog = document.querySelector("#header-dialog") as HTMLDialogElement;
+  let closeButton = document.querySelector("#header-close-button");
+  openButton?.addEventListener("click", () => {
     dialog.showModal();
+  });
+  closeButton?.addEventListener("click", () => {
+    dialog?.close();
   });
 </script>

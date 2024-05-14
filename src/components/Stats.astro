@@ -1,0 +1,87 @@
+---
+import logo1k from "../images/1k.svg";
+import CoinFund from "../images/CoinFund.svg";
+import cmc from "../images/cmc.svg";
+import coinbase from "../images/coinbase.svg";
+---
+
+<div
+  aria-label="cards block"
+  class="flex w-full flex-col items-center gap-12 lg:gap-20"
+>
+  <div class="hidden text-center text-heading font-semibold lg:block">
+    4 years of building <br /> user-friendly web3 products <br /> used by millions
+  </div>
+  <div class="text-center text-heading-mobile font-semibold lg:hidden">
+    4 years of building <br /> user-friendly web3 products used by millions
+  </div>
+
+  <div
+    aria-label="cards"
+    class="grid w-full grid-cols-1 gap-4 text-center lg:grid-cols-3 lg:text-start"
+  >
+    <div
+      aria-label="card NFT"
+      class="flex flex-col gap-1 rounded-3xl border border-gray-700/70 px-8 py-10 lg:col-span-3 lg:py-10"
+    >
+      <div class="hidden text-heading-mobile lg:block lg:text-card-heading">
+        $300,000,000+
+      </div>
+      <div class="text-heading-mobile lg:hidden lg:text-card-heading">
+        $300M+
+      </div>
+      <div class="text-card-description text-zinc-400">
+        worth of NFTs sold through Rarible products
+      </div>
+    </div>
+
+    <div
+      aria-label="card Users"
+      class="flex flex-col gap-1 rounded-3xl border border-gray-700/70 p-10"
+    >
+      <div class="hidden text-heading-mobile lg:block lg:text-card-heading">
+        1,000,000+
+      </div>
+      <div class="text-heading-mobile lg:hidden lg:text-card-heading">1M+</div>
+      <div class="text-card-description text-zinc-400">
+        monthly Active Users
+      </div>
+    </div>
+
+    <div
+      aria-label="card Followers"
+      class="flex flex-col gap-1 rounded-3xl border border-gray-700/70 p-10"
+    >
+      <div class="hidden text-heading-mobile lg:block lg:text-card-heading">
+        1,000,000+
+      </div>
+      <div class="text-heading-mobile lg:hidden lg:text-card-heading">1M+</div>
+      <div class="text-card-description text-zinc-400">
+        social media followers
+      </div>
+    </div>
+
+    <div
+      aria-label="card Marketplaces"
+      class="flex flex-col gap-1 rounded-3xl border border-gray-700/70 p-10"
+    >
+      <div class="hidden text-heading-mobile lg:block lg:text-card-heading">
+        5,000+
+      </div>
+      <div class="text-heading-mobile lg:hidden lg:text-card-heading">5K+</div>
+      <div class="text-card-description text-zinc-400">
+        marketplaces powered by RaribleX
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center gap-20 lg:flex-row">
+    <div class="text-4xl font-semibold">Backed by</div>
+    <div class="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
+      <img class="h-8" src={coinbase.src} />
+      <img class="h-8" src={CoinFund.src} />
+      <img class="h-8" src={logo1k.src} />
+      <img class="h-20" src={cmc.src} />
+    </div>
+  </div>
+</div>
