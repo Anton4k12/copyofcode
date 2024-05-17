@@ -9,13 +9,28 @@ import Button from "../components/Button.astro";
 import Hovers from "../components/Hovers.astro";
 ---
 
-<!-- 
- flex       - cоздаем flex контейнер 
- justify-*  - выравниваем по оси
- items-*    - выравниваем по другой оси
- gap - відстань
+<script>
+  import { animate, inView } from "motion";
 
- -->
+  inView("#hero", () => {
+    animate(
+      "#hero-title",
+      { opacity: 1, transform: "translateY(0)" },
+      { duration: 0.7 },
+    );
+    animate(
+      "#hero-desc",
+      { opacity: 1, transform: "translateY(0)" },
+      { duration: 0.7, delay: 0.1 },
+    );
+    animate(
+      "#video",
+      { opacity: 1, transform: "translateY(0)" },
+      { duration: 0.7, delay: 0.2 },
+    );
+  });
+</script>
+
 <Layout>
   <div class="flex flex-col gap-20 pt-[120px] lg:gap-60 lg:pt-40">
     <Hero />

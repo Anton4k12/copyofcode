@@ -3,20 +3,24 @@ import arrowright from "../images/arrow-right.svg";
 import Video from "../components/Video.astro";
 ---
 
-<div class="flex flex-col gap-16 lg:gap-20">
+<div id="hero" class="flex flex-col gap-16 lg:gap-20">
   <div
     aria-label="hero"
     class="flex flex-col items-center gap-3 lg:flex-row lg:justify-between lg:gap-0"
   >
     <h1
-      class="mx-auto text-pretty text-center text-heading-mobile font-semibold lg:text-start lg:text-heading"
+      id="hero-title"
+      class="initial-animation-hero mx-auto text-pretty text-center text-heading-mobile font-semibold lg:text-start lg:text-heading"
     >
       <span>Launch a custom</span>
       <br />
       <span>web3 marketplace <br class="sm:hidden" /> for your brand</span>
     </h1>
 
-    <div class="flex flex-col gap-10 lg:pl-20">
+    <div
+      id="hero-desc"
+      class="initial-animation-hero flex flex-col gap-10 lg:pl-20"
+    >
       <p
         class="text-balance text-center text-lg text-zinc-400/80 lg:text-start lg:text-[22px] lg:text-white"
       >
