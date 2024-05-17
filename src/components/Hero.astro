@@ -28,13 +28,36 @@ import Video from "../components/Video.astro";
         digital collectibles
       </p>
       <button
+        id="hero-button"
         class="flex w-full items-center justify-between rounded-full bg-[rgb(255,248,0)] py-6 pl-10 pr-8 text-start text-xl font-semibold leading-[1.3em] text-black"
       >
         <div>CREATE MARKETPLACE</div>
-        <img src={arrowright.src} />
+        <div class="w-6 overflow-hidden">
+          <div
+            id="hero-arrow"
+            style={{ transform: "translateX(-24px)" }}
+            class="flex"
+          >
+            <img src={arrowright.src} />
+            <img src={arrowright.src} />
+          </div>
+        </div>
       </button>
     </div>
   </div>
 
   <Video />
 </div>
+
+<script>
+  import { animate } from "motion";
+
+  let button = document.querySelector("#hero-button");
+
+  button?.addEventListener("mouseenter", () => {
+    animate("#hero-arrow", { transform: "translateX(0)" });
+  });
+  button?.addEventListener("mouseleave", () => {
+    animate("#hero-arrow", { transform: "translateX(-24px)" });
+  });
+</script>
