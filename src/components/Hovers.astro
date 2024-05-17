@@ -1,0 +1,50 @@
+---
+import HoverCard from "../components/HoverCard.astro";
+---
+
+<div aria-label="hovers" class="flex flex-col gap-12 lg:gap-20">
+  <div class="hidden text-center text-heading lg:flex">
+    Web3 is where the consumer experience revolution is already happening
+  </div>
+  <div class="flex text-center text-heading-mobile lg:hidden">
+    Web3 is where the consumer experience revolution is already happening
+  </div>
+  <div class="flex flex-col gap-4">
+    <HoverCard
+      heading="L1/L2s"
+      backgroundSrc="patterns.svg"
+      description="Prepare for the next stage of the Internet where NFT are as commonplace as emails."
+      cards={[
+        "MISSION-CRITICAL INFRASTRUCTURE FOR THE BUILDERS",
+        "ORGANIC COMMUNITY GROWTH VIA NFTS",
+        "COLLABS WITH WEB2/WEB3 BRANDS AND POPULAR IPS",
+        "INSTANT ACCESS TO A MASSIVE CREATOR AND COLLECTOR NETWORK",
+      ]}
+      examples="Success Stories: Mintle Marketplace"
+    />
+
+    <HoverCard
+      heading="Toys"
+      backgroundSrc="pattern2.svg"
+      description="Bridge the gap between traditional toy collecting and the digital age.."
+      cards={[
+        "UNLOCK NEW REVENUE STREAMS",
+        "REACH NEW WEB3 AUDIENCE OF COLLECTORS",
+        "NEW PRODUCT LINE TO RE-ENGAGE YOUR EXISTING CUSTOMERS",
+      ]}
+      examples="Examples: Mattel Creations, McFarlane Toys"
+    />
+
+    <HoverCard
+      heading="Web3 ecosystems"
+      backgroundSrc="pattern3.svg"
+      description="Get a go-to platform tailored specifically to your ecosystem. No matter the scale."
+      cards={[
+        "CUSTOM FEATURES: UI, REWARDS PROGRAMS, NATIVE TOKEN SUPPORT AND MUCH MORE",
+        "ON-BRAND EXPERIENCE FOR YOUR CUSTOMERS",
+        "OPTIMAL RETENTION — NO NEED TO SEND YOUR USERS ELSEWHERE",
+      ]}
+      examples="Example: Mocaverse marketplace"
+    />
+  </div>
+</div>
