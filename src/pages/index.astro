@@ -5,6 +5,7 @@ import Footer from "../components/footer.astro";
 import Stats from "../components/Stats.astro";
 import Layout from "../layouts/Layout.astro";
 import Video from "../components/Video.astro";
+import Button from "../components/Button.astro";
 ---
 
 <!-- 
@@ -20,24 +21,7 @@ import Video from "../components/Video.astro";
 
     <Stats />
 
-    <div aria-label="textcard block" class="flex flex-col gap-12 lg:gap-20">
-      <div aria-label="text" class="hidden justify-center text-heading lg:flex">
-        Grow your business with Web3
-      </div>
-      <div
-        aria-label="text"
-        class="flex justify-center text-center text-heading-mobile lg:hidden"
-      >
-        Grow your business with Web3
-      </div>
-
-      <button
-        aria-label="button"
-        class="flex w-full justify-center rounded-full border bg-[rgb(255,248,0)] px-12 py-6 text-center text-small-button text-black lg:py-40 lg:text-heading"
-      >
-        BECOME A SUCCESS STORY
-      </button>
-    </div>
+    <Button />
 
     <div aria-label="hovers" class="flex flex-col gap-12 lg:gap-20">
       <div class="hidden text-center text-heading lg:flex">
