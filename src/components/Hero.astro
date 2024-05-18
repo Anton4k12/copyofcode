@@ -35,13 +35,14 @@ import Video from "../components/Video.astro";
         <div class="w-6 overflow-hidden">
           <div
             id="hero-arrow"
-            style={{ transform: "lg:translateX(-24px)" }}
+            style={{ transform: "translateX(-24px)" }}
             class="flex"
           >
-            <img src={arrowright.src} />
+            <img class="hidden lg:block" src={arrowright.src} />
             <img src={arrowright.src} />
           </div>
         </div>
+        <img class="lg:hidden" src={arrowright.src} />
       </button>
     </div>
   </div>
